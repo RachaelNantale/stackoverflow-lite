@@ -1,6 +1,7 @@
 /* CSS for stackoverflow */
 * {
     box-sizing: border-box;
+
 }
 
 
@@ -77,6 +78,7 @@ nav {
     color:black;
     position: relative;
     padding: 20px;
+    opacity: 0.5;
    
 }
 
@@ -96,6 +98,9 @@ nav ul li {
  nav ul li a {
     color: white;
     text-decoration: none;
+}
+nav ul li a:hover {
+    color: #000;
 }
 
 /* style for h1 */
@@ -128,8 +133,11 @@ article h1 {
 .qtn-asked a{
     text-decoration: none;
     font-size: 20px;
-    color: #000;
+    color: blue;
     font-weight: bold;
+}
+.qtn-asked a:hover {
+    color: darkblue;
 }
 .qtn-field {
     border: 1px solid #ccc;
@@ -159,17 +167,18 @@ h1#yay {
     background-color: #E1ECF4;
     border-color: #E1ECF4;
     width: 100px;
-    margin-left: 100px;
+    /* margin-left: 100px;
     position: relative;
-    top: 25px;
+    top: 25px; */ 
 }
 h1#nay {
     color: #212425;
     background-color: #E1ECF4;
     border-color: #E1ECF4;
-    margin-left: 10em;
     width: 100px;
-    top: 30px;
+/* 
+    margin-left: 10em;
+    top: 30px; */ 
 }
 
 .questions ul li{
@@ -229,17 +238,7 @@ footer {
     align-items: center;
     text-align: center;
 }
-/* media queries */
-@media (max-width: 600px) {
-    section {
-      -webkit-flex-direction: column;
-      flex-direction: column;
-    }
-    .seconddiv {
-        -webkit-flex-direction: column;
-      flex-direction: column;
-    }
-}
+
 
 form {
     margin-left: 7%;
@@ -299,4 +298,57 @@ h1#CSS {
     border-color: #E1ECF4;
 }
 
+/* media queries */
+@media only screen and (min-width:400px) and (max-width:699px) {
+    header {
+        -webkit-flex-direction: column;
+      flex-direction: column;
+      width: 100%
 
+    }
+    section {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+    .seconddiv {
+        -webkit-flex-direction: column;
+      flex-direction: column;
+      width: 100%
+    }
+}
+@media only screen and (min-width:700px) and (max-width:995px) {
+    header {
+        -webkit-flex-direction: column;
+      flex-direction: column;
+      width: 100%
+
+    }
+    section {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+    .seconddiv {
+        -webkit-flex-direction: column;
+      flex-direction: column;
+      width: 100%
+    }
+}
+
+@media only screen and (min-width:100px) and (max-width:399px) {
+
+    header {
+        -webkit-flex-direction: column;
+      flex-direction: column;
+      width: 100%
+
+    }
+    section {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+    .seconddiv {
+        -webkit-flex-direction: column;
+      flex-direction: column;
+      width: 100%
+    }
+}
