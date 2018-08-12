@@ -221,7 +221,10 @@ h1#nay {
     background-color: #FFF8DC;
     border: 1px solid #E0DCBF;
 }
-
+.innerdiv p a {
+    text-decoration: none;
+    color: blue;
+}
 /* footer styles */
 footer {
     background-color: darkcyan; 
